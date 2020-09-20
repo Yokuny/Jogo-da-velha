@@ -1,0 +1,51 @@
+*{
+    --primary: rgb(175, 175, 175);
+    --detail: rgba(138, 138, 138, 0.25);
+}
+html body{
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    text-align: center;
+}
+.game-title{
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.quadrado {
+    text-align: center;
+    width: 7vw;
+    height: 5.5vh;
+    background: var(--primary);
+    display: inline-block;
+    padding: 4vh;
+    font-size: 4vw;
+    margin: .6%;
+    cursor: pointer;
+    color: var(--primary);
+    transition: background .2s;
+}
+.quadrado:hover{
+    background-color: var(--detail);
+}
+.jogador, .vencedor {
+    font-size: 1.8vh;
+    margin-top: 2vh;
+}
+button {
+    margin-top: 2vh;
+    width: 11vh;
+    height: 3vh;
+    font-size: 1.8vh;
+    background: var(--primary);
+    border: solid .05vw var(--detail);
+    cursor: pointer;
+    transition: background .2s;
+}
+button:hover{
+    background-color: var(--detail);
+}
