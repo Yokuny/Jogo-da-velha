@@ -1,0 +1,31 @@
+*{
+    --primary: #CCAF99;
+    --detail: #AA8171;
+    --font: #733F34;
+    --background: #FFFAD5;
+}
+html body{
+    background-color: var(--background);
+}
+.game-title h1{
+    color: var(--font);
+}
+.square{
+    background: var(--primary);
+    color: var(--primary);
+    transition: .2s;
+}
+.square:hover{
+    color: var(--detail);
+    background-color: var(--detail);
+}
+.player, .winner {
+}
+button {
+    background: var(--primary);
+    border: solid .05vw var(--detail);
+    transition: background .2s;
+}
+button:hover{
+    background-color: var(--detail);
+}
