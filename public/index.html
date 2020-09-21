@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash game</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <div class="game-title">
+        <a href="index.html">
+            <h1>Jogo da Velha</h1>
+        </a>
+    </div>
+    <div>
+        <div id="1" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="2" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="3" class="square" onclick="SelectSquare(this.id)">-</div>
+    </div>
+    <div>
+        <div id="4" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="5" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="6" class="square" onclick="SelectSquare(this.id)">-</div>
+    </div>
+    <div>
+        <div id="7" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="8" class="square" onclick="SelectSquare(this.id)">-</div>
+        <div id="9" class="square" onclick="SelectSquare(this.id)">-</div>
+    </div>
+    <div class="player">
+        <label for="">player:</label>
+        <label id="selected-player"></label>
+        <!--Aqui recebe X ou O-->
+    </div>
+    <div class="winner">
+        <label for="">Winner</label>
+        <label id="selected-winner"></label>
+    </div>
+    <div>
+        <button onclick="restart()">Restart</button>
+    </div>
+    <script src="scripts/hash.js"></script>
+    <script src="scripts/restart.js"></script>
+</body>
+
+</html>

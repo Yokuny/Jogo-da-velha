@@ -1,0 +1,26 @@
+{
+  "name": "jogo-da-velha",
+  "version": "1.0.0",
+  "description": "hash game in browser",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serve": "^11.3.2",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yokuny/JogoDaVelha.git"
+  },
+  "author": "@yokuny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yokuny/JogoDaVelha/issues"
+  },
+  "homepage": "https://github.com/Yokuny/JogoDaVelha#readme"
+}
