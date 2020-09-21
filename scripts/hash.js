@@ -11,7 +11,13 @@ function SelectSquare(id) {
         return;
     }
     square.innerHTML = player;
-    square.style.color = 'black';
+    if (player === 'X') {
+        square.style.color = 'red';
+    }
+    if (player === 'O') {
+        square.style.color = 'blue';
+    }
+    square.style.backgroundColor = '#aa817166'
     if (player === 'X') { //se player atual (que clicou) for X então O se não, então X
         player = 'O';
     } else {
@@ -19,6 +25,7 @@ function SelectSquare(id) {
     }
     playerChanger(player); //passa o valor atual do player agora já trocado para a função de troca
     winnerCheck();
+    ///conferir se deu velha
 }
 function playerChanger(value) {
     player = value; //pega o valor recebido e dá a tal player atual e espera o proximo click
@@ -79,12 +86,9 @@ function winnerChanger(square) {
     selectedWinner.innerHTML = winner; //winner recebe o valor do winner X ou O
 }
 function squareColorChanger(square1, square2, square3) {
-    square1.style.background = '#0f0';
-    square2.style.background = '#0f0';
-    square3.style.background = '#0f0';
-    square1.style.color = '#105B63';
-    square2.style.color = '#105B63';
-    square3.style.color = '#105B63';
+    square1.style.background = '#33FF00';
+    square2.style.background = '#33FF00';
+    square3.style.background = '#33FF00';
 }
 function sequenceCheck(square1, square2, square3) {
     var equal = false;
