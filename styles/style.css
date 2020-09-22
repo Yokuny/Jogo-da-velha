@@ -8,6 +8,9 @@ html body{
 	font-size: 100%;
     text-align: center;
 }
+.game-title{
+    margin-top: 10vh;
+}
 .game-title a{
     text-decoration: none;
 }
