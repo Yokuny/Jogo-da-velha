@@ -9,8 +9,6 @@
 
 ### 🏠 [Homepage](https://yokuny.github.io/JogoDaVelha/)
 
-### ✨ [Demo](jogo-da-velha-one.vercel.app)
-
 ## Usage
 
 ```sh
